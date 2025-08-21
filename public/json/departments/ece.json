@@ -7,8 +7,14 @@
       "designation": "HoD, ECE",
       "message": "Welcome to the Department of Electronics and Communication Engineering. Our department strives to empower students with the knowledge, skills, and confidence to excel in a dynamic and fast-evolving tech world. We promote research and industry partnerships to ensure our students are future-ready."
     },
+    "programme_offered":[
+      "B.Tech ECE",
+      "B.Tech ECE(VLSI)",
+      "M.Tech VLSI Systems"
+
+    ],
     "faculty_members": [
-       {
+      {
         "name": "Dr. R. Krishnamurthy",
         "designation": "Assistant Professor & Head of the Department"
       },
@@ -90,7 +96,8 @@
         "supervisor": "Prof. G. Seetharaman",
         "PersonalPage": "https://orcid.org/0009-0009-4970-3333",
         "status": "Ongoing"
-      },      {
+      },
+      {
         "name": "Sindhu Velayudham",
         "src": "/phd_students/Sindhu_Velayudham.jpeg",
         "dept": "ECE",
@@ -100,6 +107,43 @@
         "status": "Ongoing"
       }
     ],
+    "demographic": {
+      "total_students": 114,
+      "btech": {
+        "total": 111,
+        "year_wise": [
+          {
+            "year": "1st Year",
+            "count": 0
+          },
+          {
+            "year": "2nd Year",
+            "count": 0
+          },
+          {
+            "year": "3rd Year",
+            "count": 53
+          },
+          {
+            "year": "4th Year",
+            "count": 58
+          }
+        ]
+      },
+      "mtech": {
+        "total": 3,
+        "year_wise": [
+          {
+            "year": "1st Year",
+            "count": 0
+          },
+          {
+            "year": "2nd Year",
+            "count": 3
+          }
+        ]
+      }
+    },
     "announcements": [],
     "latest_news": [],
     "contact": {

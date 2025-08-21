@@ -1,4 +1,3 @@
-
 export interface Department {
   department: string;
   about: string;
@@ -18,8 +17,8 @@ export interface Department {
     dept: string;
     researchArea: string;
     supervisor: string;
-    PersonalPage: string
-    status: string
+    PersonalPage: string;
+    status: string;
   }[];
   research_areas: string[];
   announcements: {
@@ -37,8 +36,33 @@ export interface Department {
     email: string;
     phone: string;
   };
+  programme_offered: string[];
+  notable_alumni: string[];
+  rank_holder: string[];
+  placed_student: {
+    company: string;
+    student_placed: string[];
+  }[];
+  lab_facilities: {
+    link?: string;
+    description?: string;
+  }[];
+  demographic: {
+    total_students: number;
+    btech: ProgramDemographic;
+    mtech: ProgramDemographic;
+  };
 }
 
+interface YearWiseCount {
+  year: string;
+  count: number;
+}
+
+interface ProgramDemographic {
+  total: number;
+  year_wise: YearWiseCount[];
+}
 
 export interface DepartmentsData {
   name: string;
