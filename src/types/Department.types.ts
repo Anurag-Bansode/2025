@@ -1,3 +1,5 @@
+import { FacultyMember } from "@/types/faculty.types";
+
 export interface Department {
   department: string;
   about: string;
@@ -6,10 +8,8 @@ export interface Department {
     designation: string;
     message: string;
   };
-  faculty_members: {
-    name: string;
-    designation: string;
-  }[];
+  faculty_members: FacultyMember[];
+  class_coordinator: FacultyMember[];
   research_scholars: {
     name: string;
     src: string;
@@ -37,7 +37,11 @@ export interface Department {
     phone: string;
   };
   programme_offered: string[];
-  notable_alumni: string[];
+  notable_alumni:
+  {
+    name:string;
+    description:string;
+  }[];
   rank_holder: string[];
   placed_student: {
     company: string;
@@ -52,6 +56,10 @@ export interface Department {
     btech: ProgramDemographic;
     mtech: ProgramDemographic;
   };
+  timetable:{
+    name:string,
+    link:string
+  }[];
 }
 
 interface YearWiseCount {

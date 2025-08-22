@@ -9,33 +9,112 @@
     },
     "faculty_members": [
       {
+        "id": {
+          "dept": "CSE",
+          "deptID": "1"
+        },
         "name": "Dr. Anoop Jacob Thomas",
-        "designation": "Assistant Professor, Head of the Department"
+        "designation": "Head of the Department",
+        "researchArea": "Medical Image Processing, Neuroimage Processing, Image Processing, Algorithms",
+        "emailID": "anoopjt@iiitt.ac.in",
+        "src": "/faculty/AnoopJacobThomas.jpg",
+        "Incharge": "Campus Networking,Training and Placement, Exam Cell Member, Student Discipline, Hall Booking ",
+        "Institute": "Ph.D. CSE (IIT Ropar)",
+        "VidhwanLink": "https://vidwan.inflibnet.ac.in/profile/194478",
+        "PersonalPage": "https://www.linkedin.com/in/anoopjt/"
       },
       {
+        "id": {
+          "dept": "CSE",
+          "deptID": "2"
+        },
         "name": "Dr. R. Dhanalakshmi",
-        "designation": "Associate Professor"
+        "designation": "Associate Professor",
+        "researchArea": "Computer Networks, Combinatorial Optimization Techniques, Data Analytics",
+        "emailID": "dhanalakshmir@iiitt.ac.in",
+        "src": "/faculty/Dhanalakshmi_cropped.jpg",
+        "Incharge": "",
+        "Institute": " Ph.D. (Jawaharlal Nehru Technological University Hyderabad)",
+        "VidhwanLink": "https://vidwan.inflibnet.ac.in/profile/101692"
       },
       {
+        "id": {
+          "dept": "CSE",
+          "deptID": "3"
+        },
         "name": "Dr. N. Renugadevi",
-        "designation": "Assistant Professor"
+        "designation": "Assistant Professor",
+        "researchArea": "Information Security, Group Key Management, Secure Group Communication, Artificial Intelligence, Data Science, Remote Sensing & Geographic Information System(GIS), Digital Agriculture, Cognitive Radio Networks ",
+        "emailID": "renugadevin@iiitt.ac.in",
+        "src": "/faculty/Renuga.jpg",
+        "Incharge": " Registrar(i/c), Member Secretary (Ex-officio), Board of Governors, Finance Committee, Building and Works Committee, senate Committee, Exam Cell, Alumni Association, DigiLocker",
+        "Institute": " Ph.D. CSE (NIT Tiruchirappalli)",
+        "VidhwanLink": "https://vidwan.inflibnet.ac.in/profile/194473"
       },
-     {
+      {
+        "id": {
+          "dept": "CSE",
+          "deptID": "4"
+        },
         "name": "Dr. G. Devasena",
-        "designation": "Assistant Professor "
+        "designation": "Assistant Professor",
+        "Incharge": " Convocation(i/c), ERP, AISHE portal, NSP portal",
+        "Institute": "Ph.D. (Anna University)",
+        "VidhwanLink": "https://vidwan.inflibnet.ac.in/profile/194480",
+        "researchArea": "Image Processing, Deep Learning and Machine  Learning, Video Processing, ",
+        "emailID": "devasenag@iiitt.ac.in",
+        "src": "/faculty/Devasena.jpg",
+        "PersonalPage": "https://sites.google.com/view/devasenagiiitt/home"
       },
       {
+        "id": {
+          "dept": "CSE",
+          "deptID": "5"
+        },
         "name": "Dr. T. Sugirtha",
-        "designation": "Assistant Professor"
+        "designation": "Assistant Professor",
+        "researchArea": "  Computer vision, Deep Learning, Autonomous Driving, Augmented reality/Virtual Reality, Federated Learning, Full stack development.",
+        "emailID": "sugirthat@iiitt.ac.in",
+        "src": "/faculty/Sugirtha.jpg",
+        "Incharge": "Girls Hostel Warden, Institute Mess",
+        "Institute": "Ph.D. CSE (NIT Tiruchirappalli)",
+        "VidhwanLink": ""
       },
       {
+        "id": {
+          "dept": "CSE",
+          "deptID": "6"
+        },
         "name": "Dr. M. Ambika",
-        "designation": "Assistant Professor"
+        "designation": "Assistant Professor",
+        "researchArea": "  AI, ML & DL, Recommendation System, Fuzzy Logic, Decision Support System, NLP, Precision Agriculture",
+        "emailID": "ambikam@iiitt.ac.in",
+        "src": "/faculty/AmbikaM.jpg",
+        "Incharge": "Admission (UG & PG),Gem & CPP, Insurance, Purchase, 6th Convocation,Aikyam Magazine",
+        "Institute": "Ph.D. (Anna University Chennai)",
+        "VidhwanLink": "https://vidwan.inflibnet.ac.in/profile/588225",
+        "PersonalPage": "http://store.iiitt.ac.in/downloads/Faculty_Profiles/Ambika_Resume.pdf"
       },
       {
+        "id": {
+          "dept": "CSE",
+          "deptID": "7"
+        },
         "name": "Dr. J. Kokila",
-        "designation": "Assistant Professor"
+        "designation": "Assistant Professor",
+        "researchArea": "Hardware Security, Information Security, Blockchain Technology, IoT Edge Computing, Computer Architecture",
+        "emailID": "kokilaj@iiitt.ac.in",
+        "src": "/faculty/KokilaJ.jpg",
+        "Incharge": "Website development,maintenance and Social Media, clubs - (Website Dev, Media, Competitive Coding), E-Cell ",
+        "Institute": "Ph.D. CSE (NIT Tiruchirappalli) under Visvesvaraya Phd Scheme",
+        "VidhwanLink": "https://vidwan.inflibnet.ac.in/profile/212555",
+        "PersonalPage": "https://sites.google.com/site/kokilajrsnitt/?pli=1"
       }
+    ],
+    "programme_offered": [
+      "B.Tech CSE ",
+      "B.Tech CSE(AIDS) ",
+      "M.Tech CSE "
     ],
     "faculty_profiles_link": "/faculty",
     "research_areas": [
@@ -66,22 +145,144 @@
         "status": "Ongoing"
       }
     ],
-    "lab_facilities": {
-      "description": "Our department has state-of-the-art labs for students and researchers including AI Labs, Networking Labs, and IoT Labs.",
-      "link": "CSE Lab Facilities Page"
-    },
+    "lab_facilities": [
+      {
+        "description": "Our department has state-of-the-art labs for students and researchers including AI Labs, Networking Labs, and IoT Labs.",
+        "link": "CSE Lab Facilities Page"
+      }
+    ],
+    "class_coordinator": [
+
+      {
+        "id": {
+          "dept": "CSE",
+          "deptID": "1"
+        },
+        "name": "Dr. Anoop Jacob Thomas",
+        "designation": "M.Tech CSE I Year",
+        "emailID": "anoopjt@iiitt.ac.in",
+        "src": "/faculty/AnoopJacobThomas.jpg"
+      },
+      {
+        "id": {
+          "dept": "CSE",
+          "deptID": "4"
+        },
+        "name": "Dr. G. Devasena",
+        "designation": "M.Tech CSE II Year",
+        "emailID": "devasenag@iiitt.ac.in",
+        "src": "/faculty/Devasena.jpg"
+      },
+      {
+        "id": {
+          "dept": "CSE",
+          "deptID": "7"
+        },
+        "name": "Dr. J. Kokila",
+        "designation": "B.Tech CSE II Year",
+        "emailID": "kokilaj@iiitt.ac.in",
+        "src": "/faculty/KokilaJ.jpg"
+      },
+      {
+        "id": {
+          "dept": "CSE",
+          "deptID": "5"
+        },
+        "name": "Dr. T. Sugirtha",
+        "designation": "B.Tech CSE III Year",
+        "emailID": "sugirthat@iiitt.ac.in",
+        "src": "/faculty/Sugirtha.jpg"
+      },
+      {
+        "id": {
+          "dept": "CSE",
+          "deptID": "6"
+        },
+        "name": "Dr. M. Ambika",
+        "designation": "B.Tech CSE IV Year",
+        "emailID": "ambikam@iiitt.ac.in",
+        "src": "/faculty/AmbikaM.jpg"
+      }
+    ],
     "announcements": [
       {
         "title": "AICTE QIP sponsored PG certificate programme on “Machine Learning and Cyber Physical Systems” (Offline 16-27th June 2025)",
         "date": "14/05/2025",
-        "link":"events/2. AICTE_PG_CSE_ML and CPS final flyer_2025 .pdf"
+        "link": "events/2. AICTE_PG_CSE_ML and CPS final flyer_2025 .pdf"
+      },
+      {
+        "title": "ADMISSION TO M. Tech. (Self-Support) PROGRAMMES 2025-2026",
+        "date": "13/08/2025",
+        "link": "/admission/MTECH self support Brochure_ August 2025 - Final.pdf"
+
+     },
+      {
+        "title": "Information for Physical Reporting Process of B.Tech. I Semester (2025-26)",
+        "date": "18/08/2025",
+        "link": "/admission/First yr Reporting details 2025-26 - Final.pdf"
+
       }
-
-
     ],
-    "latest_news": [
-
+    "latest_news": [],
+    "placed students": [
+      {
+        "company": "",
+        "CTC": ""
+      }
     ],
+    "timetable": [
+      {
+        "name": "Computer Science and Engineering - PG",
+        "link": "CSE_PG.pdf"
+      },
+      {
+        "name": "Computer Science and Engineering - UG",
+        "link": "CSE_UG.pdf"
+      }
+    ],
+    "notable_alumni": [
+      {
+        "name": " Samuel Nadar",
+        "description": "  GATE 2024 AIR 14 CSE ,GATE 2024 AIR 21 DA"
+      }
+    ],
+    "demographic": {
+      "total_students": 211,
+      "btech": {
+        "total": 191,
+        "year_wise": [
+          {
+            "year": "1st Year",
+            "count": 0
+          },
+          {
+            "year": "2nd Year",
+            "count": 57
+          },
+          {
+            "year": "3rd Year",
+            "count": 67
+          },
+          {
+            "year": "4th Year",
+            "count": 67
+          }
+        ]
+      },
+      "mtech": {
+        "total": 20,
+        "year_wise": [
+          {
+            "year": "1st Year",
+            "count": 15
+          },
+          {
+            "year": "2nd Year",
+            "count": 5
+          }
+        ]
+      }
+    },
     "contact": {
       "department": "Department of Computer Science Engineering",
       "college": "Indian Institute of Information Technology",

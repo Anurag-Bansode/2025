@@ -12,4 +12,5 @@ export interface FacultyMember {
   VidhwanLink?: string;
   Institute?: string;
   PersonalPage?:string;
+  supervisor?:string;
 }

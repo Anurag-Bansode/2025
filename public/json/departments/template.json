@@ -3,14 +3,14 @@
     "department": "Computer Science and Engineering",
     "about": "The Department of Computer Science and Engineering aims to provide strong academic and research foundations to students in computing. The department offers undergraduate, postgraduate, and doctoral programs with a focus on innovation, collaboration, and technical excellence.",
     "message_from_hod": {
-      "name": "Dr. G. Devasena",
+      "name": "Dr. Anoop Jacob Thomas",
       "designation": "HoD, CSE",
       "message": "Welcome to the Department of Computer Science and Engineering. Our department strives to empower students with the knowledge, skills, and confidence to excel in a dynamic and fast-evolving tech world. We promote research and industry partnerships to ensure our students are future-ready."
     },
     "faculty_members": [
       {
-        "name": "Dr. G. Devasena",
-        "designation": "Assistant Professor , Head of the Department"
+        "name": "Dr. Anoop Jacob Thomas",
+        "designation": "Assistant Professor, Head of the Department"
       },
       {
         "name": "Dr. R. Dhanalakshmi",
@@ -21,8 +21,8 @@
         "designation": "Assistant Professor"
       },
       {
-        "name": "Dr. Anoop Jacob Thomas",
-        "designation": "Assistant Professor"
+        "name": "Dr. G. Devasena",
+        "designation": "Assistant Professor "
       },
       {
         "name": "Dr. T. Sugirtha",
@@ -37,7 +37,12 @@
         "designation": "Assistant Professor"
       }
     ],
-    "faculty_profiles_link": "View Full Faculty Profiles",
+    "programme_offered": [
+      "B.Tech CSE ",
+      "B.Tech CSE(AIDS) ",
+      "M.Tech CSE "
+    ],
+    "faculty_profiles_link": "/faculty",
     "research_areas": [
       "Artificial Intelligence and Machine Learning",
       "Cybersecurity and Cryptography",
@@ -48,25 +53,75 @@
     ],
     "research_scholars": [
       {
-        "name": "Will be updated shortly",
-        "topic": "Will be updated shortly"
+        "name": "Vidhya V",
+        "src": "/phd_students/Vidhya_V.JPG",
+        "dept": "CSE",
+        "researchArea": "AI, ML & DL, Image Processing, Computer vision, NLP",
+        "supervisor": "Dr. G Devasena",
+        "PersonalPage": "https://scholar.google.com/citations?user=WPA8uxkAAAAJ&hl=en",
+        "status": "Ongoing"
+      },
+      {
+        "name": "Kiran Raj V",
+        "src": "/phd_students/KiranRajV.png",
+        "dept": "CSE",
+        "researchArea": "Neuroimaging, Biomedical Signal Processing & AI",
+        "supervisor": "Dr. Anoop Jacob Thomas",
+        "PersonalPage": "https://orcid.org/0000-0002-3202-9866",
+        "status": "Ongoing"
       }
     ],
-    "lab_facilities": {
-      "description": "Our department has state-of-the-art labs for students and researchers including AI Labs, Networking Labs, and IoT Labs.",
-      "link": "CSE Lab Facilities Page"
-    },
+    "lab_facilities": [
+      {
+        "description": "Our department has state-of-the-art labs for students and researchers including AI Labs, Networking Labs, and IoT Labs.",
+        "link": "CSE Lab Facilities Page"
+      }
+    ],
     "announcements": [
       {
-        "title": "Will be updated shortly",
-        "date": "28/05/2025"
+        "title": "AICTE QIP sponsored PG certificate programme on “Machine Learning and Cyber Physical Systems” (Offline 16-27th June 2025)",
+        "date": "14/05/2025",
+        "link": "events/2. AICTE_PG_CSE_ML and CPS final flyer_2025 .pdf"
       }
     ],
-    "latest_news": [
-      {
-        "title": "Will be updated shortly"
+    "latest_news": [],
+    "demographic": {
+      "total_students": 211,
+      "btech": {
+        "total": 191,
+        "year_wise": [
+          {
+            "year": "1st Year",
+            "count": 0
+          },
+          {
+            "year": "2nd Year",
+            "count": 57
+          },
+          {
+            "year": "3rd Year",
+            "count": 67
+          },
+          {
+            "year": "4th Year",
+            "count": 67
+          }
+        ]
+      },
+      "mtech": {
+        "total": 20,
+        "year_wise": [
+          {
+            "year": "1st Year",
+            "count": 15
+          },
+          {
+            "year": "2nd Year",
+            "count": 5
+          }
+        ]
       }
-    ],
+    },
     "contact": {
       "department": "Department of Computer Science Engineering",
       "college": "Indian Institute of Information Technology",

@@ -20,7 +20,7 @@ const Cse: React.FC = () => {
   const [cseData, setCseData] = useState<Department | null>(null);
   const [activeSection, setActiveSection] = useState<string>("About");
 
-  // Sections mapped to JSON keys
+  // Sections mapping to JSON keys
   const sectionMap: { [key: string]: string } = {
     About: "about",
     "Message from the Head of Department": "message_from_hod",
@@ -34,7 +34,7 @@ const Cse: React.FC = () => {
     Demographics: "demographic",
     "Lab Facilities": "lab_facilities",
     Timetable: "time_table",
-    "Class Coordinators": "class coordinator",
+    "Class Coordinators": "class_coordinator",
     Announcements: "announcements",
     "Latest News": "latest_news",
     Publications: "publications",
@@ -167,40 +167,27 @@ const Cse: React.FC = () => {
                   </InfoSection>
                 )}
 
+
                 {activeSection === "Faculty Members" && (
                   <InfoSection title="Faculty Members">
-                    {Array.isArray(cseData.faculty_members) &&
-                    cseData.faculty_members.length > 0 ? (
-                      <Grid container spacing={2}>
-                        {cseData.faculty_members.map((faculty, index) => (
-                          <Grid size={{ xs: 12, sm: 6, md: 4 }} key={index}>
-                            <Box>
-                              <Typography>{faculty.name}</Typography>
-                              <Typography
-                                variant="caption"
-                                color="text.secondary"
-                              >
-                                {faculty.designation}
-                              </Typography>
-                            </Box>
-                          </Grid>
-                        ))}
-                      </Grid>
-                    ) : (
-                      <EmptyNotice />
-                    )}
-                    <Box mt={2} textAlign="right">
-                      <a
-                        href="/faculty"
-                        style={{
-                          color: "#1a5d3a",
-                          fontWeight: "bold",
-                          textDecoration: "none",
-                        }}
-                      >
-                        Know more &rarr;
-                      </a>
-                    </Box>
+                    <div className={styles.scholargrid}>
+                      {Array.isArray(cseData.faculty_members) &&
+                        cseData.faculty_members.length > 0 ? (
+                        cseData.faculty_members.map((f, i) => (
+                          <div key={i}>
+                            <PersonCard
+                              name={f.name}
+                              emailID={f.emailID}
+                              src={f.src}
+                              src_type="faculty"
+                              designation={f.designation}
+                           />
+                          </div>
+                        ))
+                      ) : (
+                        <EmptyNotice />
+                      )}
+                    </div>
                   </InfoSection>
                 )}
 
@@ -220,7 +207,7 @@ const Cse: React.FC = () => {
                   <InfoSection title="Research Scholars">
                     <div className={styles.scholargrid}>
                       {Array.isArray(cseData.research_scholars) &&
-                      cseData.research_scholars.length > 0 ? (
+                        cseData.research_scholars.length > 0 ? (
                         cseData.research_scholars.map((scholar, index) => (
                           <div key={index}>
                             <PersonCard
@@ -259,7 +246,10 @@ const Cse: React.FC = () => {
                   <InfoSection title="Notable Alumni">
                     {cseData.notable_alumni?.length ? (
                       cseData.notable_alumni.map((a, i) => (
-                        <Typography key={i}>{a}</Typography>
+                        <Box key={i}>
+                          <Typography>{a.name}</Typography>
+                          <Typography>{a.description}</Typography>
+                        </Box>
                       ))
                     ) : (
                       <EmptyNotice />
@@ -270,7 +260,7 @@ const Cse: React.FC = () => {
                 {activeSection === "Placed Students" && (
                   <InfoSection title="Placed Students">
                     {cseData.placed_student?.length &&
-                    cseData.placed_student[0].student_placed?.length ? (
+                      cseData.placed_student[0].student_placed?.length ? (
                       cseData.placed_student.map((p, i) => (
                         <Typography key={i}>{p.company}</Typography>
                       ))
@@ -279,6 +269,24 @@ const Cse: React.FC = () => {
                     )}
                   </InfoSection>
                 )}
+
+                {activeSection === "Timetable" && (
+                  <InfoSection title="Timetable">
+                    {cseData.timetable?.map((p, i) => (
+                      <div key={i} className="mb-3">
+                        <Typography>{p.name}</Typography>
+                        {p.link && (
+                          <a href={`public/docs/${p.link}`} download className={styles.link}>
+                            {p.link}
+                          </a>
+                        )}
+                      </div>
+                    ))}
+                  </InfoSection>
+                )}
+                {/*<a href={`${nextConfig.env?.DOCUMENT}/${filePath}`} download className={styles.link}></a>*/}
+
+
                 {activeSection === "Demographics" && (
                   <InfoSection title="Demographics">
                     <div className="charts-container">
@@ -381,11 +389,33 @@ const Cse: React.FC = () => {
                     ))}
                   </InfoSection>
                 )}
+                {activeSection === "Class Coordinators" && (
+                  <InfoSection title="Class Coordinators">
+                    <div className={styles.scholargrid}>
+                      {Array.isArray(cseData.class_coordinator) &&
+                        cseData.class_coordinator.length > 0 ? (
+                        cseData.class_coordinator.map((f, i) => (
+                          <div key={i}>
+                            <PersonCard
+                              name={f.name}
+                              emailID={f.emailID}
+                              src={f.src}
+                              src_type="faculty"
+                              designation={f.designation}
+                           />
+                          </div>
+                        ))
+                      ) : (
+                        <EmptyNotice />
+                      )}
+                    </div>
+                  </InfoSection>
+                )}
 
                 {activeSection === "Announcements" && (
                   <InfoSection title="Announcements">
                     {Array.isArray(cseData.announcements) &&
-                    cseData.announcements.length > 0 ? (
+                      cseData.announcements.length > 0 ? (
                       cseData.announcements.map((a, i) => (
                         <Box key={i} mb={1.5}>
                           <a

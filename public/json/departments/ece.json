@@ -7,40 +7,128 @@
       "designation": "HoD, ECE",
       "message": "Welcome to the Department of Electronics and Communication Engineering. Our department strives to empower students with the knowledge, skills, and confidence to excel in a dynamic and fast-evolving tech world. We promote research and industry partnerships to ensure our students are future-ready."
     },
-    "programme_offered":[
+    "programme_offered": [
       "B.Tech ECE",
       "B.Tech ECE(VLSI)",
       "M.Tech VLSI Systems"
-
     ],
     "faculty_members": [
       {
+        "id": {
+          "dept": "ECE",
+          "deptID": "1"
+        },
         "name": "Dr. R. Krishnamurthy",
-        "designation": "Assistant Professor & Head of the Department"
+        "designation": "Assistant Professor",
+        "researchArea": " RF and Microwave Engineering, Optical Communication",
+        "emailID": "rkrishnamurthy@iiitt.ac.in",
+        "src": "/faculty/Krishnamurthy.jpg",
+        "Incharge": "Aahladh and Atrang",
+        "Institute": "Ph.D. ECE ( IISc. Bangalore) ",
+        "VidhwanLink": "https://vidwan.inflibnet.ac.in/profile/562856",
+        "PersonalPage": "https://sites.google.com/view/krishnamurthyramanujam/home?pli=1"
       },
       {
+        "id": {
+          "dept": "ECE",
+          "deptID": "2"
+        },
         "name": "Prof. G. Seetharaman",
-        "designation": "Professor"
+        "designation": "Professor",
+        "researchArea": "ASIC & FPGA Based Design",
+        "emailID": "gsraman@iiitt.ac.in",
+        "src": "/faculty/Seetharaman.jpg",
+        "Incharge": "Admission (UG & PG)-Chairman ",
+        "Institute": "Ph.D. ECE (NIT Tiruchirappalli) ",
+        "VidhwanLink": "https://vidwan.inflibnet.ac.in/profile/194472",
+        "PersonalPage": "http://store.iiitt.ac.in/downloads/Faculty_Profiles/Prof_GS_profile.pdf"
       },
       {
+        "id": {
+          "dept": "ECE",
+          "deptID": "3"
+        },
         "name": "Dr. M. Senthil Sivakumar",
-        "designation": "Assistant Professor"
+        "designation": "Assistant Professor",
+        "researchArea": " VLSI System Design and Testing, Analog and Mixed Signal IC Design, AI Hardware Accelerator and SoC Design",
+        "emailID": "msenthilsivakumar@iiitt.ac.in",
+        "src": "/faculty/MSenthilSivakumar.jpg",
+        "Incharge": "NBA, NIRF, and Internship, Institute Mess. ",
+        "Institute": "Ph.D. ECE (MIT Campus, Anna University Chennai)",
+        "VidhwanLink": "https://iiitt.irins.org/profile/194474"
       },
       {
+        "id": {
+          "dept": "ECE",
+          "deptID": "2"
+        },
+        "name": "Dr. R. Krishnamurthy",
+        "designation": "Assistant Professor",
+        "researchArea": " RF and Microwave Engineering, Optical Communication",
+        "emailID": "rkrishnamurthy@iiitt.ac.in",
+        "src": "/faculty/Krishnamurthy.jpg",
+        "Incharge": "Aahladh and Atrang",
+        "Institute": "Ph.D. ECE ( IISc. Bangalore) ",
+        "VidhwanLink": "https://vidwan.inflibnet.ac.in/profile/562856",
+        "PersonalPage": "https://sites.google.com/view/krishnamurthyramanujam/home?pli=1"
+      },
+      {
+        "id": {
+          "dept": "ECE",
+          "deptID": "4"
+        },
         "name": "Dr. Banoth Ravi",
-        "designation": "Assistant Professor"
+        "designation": "Assistant Professor",
+        "researchArea": "Wireless Networks, Machine learning for Wireless communications, 5G/6G Intelligent Networks, Communication Networks, Vehicular Communications, Software Defined Networks",
+        "emailID": "ravib@iiitt.ac.in",
+        "src": "/faculty/raviB_2024.jpeg",
+        "Incharge": "Boys Hostel Warden, Indoor Games.",
+        "Institute": "Ph.D. ECE (IIT Dhanbad)",
+        "VidhwanLink": "https://vidwan.inflibnet.ac.in/profile/562773",
+        "PersonalPage": "https://sites.google.com/view/ravibanothiitism"
       },
       {
+        "id": {
+          "dept": "ECE",
+          "deptID": "5"
+        },
         "name": "Dr. D Suresh",
-        "designation": "Assistant Professor"
+        "designation": "Assistant Professor",
+        "researchArea": " VLSI; Phase change memory devices; Device simulations; Novel devices; Radiation–tolerant, non–volatile emerging memory devices",
+        "emailID": "sureshd@iiitt.ac.in",
+        "src": "/faculty/SureshD.jpg",
+        "Incharge": "Sports & Gym (Out Door), NSS, Curricular and Extra-Curricular Activities",
+        "Institute": "Ph.D. ECE (IIT Indore),   Post-doc. (IIT Madras)",
+        "VidhwanLink": ""
       },
       {
+        "id": {
+          "dept": "ECE",
+          "deptID": "6"
+        },
         "name": "Dr. S. Padmathilagam",
-        "designation": "Assistant Professor"
+        "designation": "Assistant Professor",
+        "researchArea": "Antenna design and Measurements: Microstrip Antennas, Monopole Antennas, Reconfigurable Antennas, MIMO Antennas, WBAN Antennas; Microwave components and circuits.",
+        "emailID": "padmathilagams@iiitt.ac.in",
+        "src": "/faculty/PadmathilagamS.jpg",
+        "Incharge": "Institute Library",
+        "Institute": "Ph.D. ECE (CEG Campus, Anna University Chennai.)",
+        "VidhwanLink": "https://vidwan.inflibnet.ac.in/profile/589595",
+        "PersonalPage": "https://sites.google.com/iiitt.ac.in/padmathilagamprofile/home"
       },
       {
+        "id": {
+          "dept": "ECE",
+          "deptID": "7"
+        },
         "name": "Dr. M. Harish Adhithya",
-        "designation": "Assistant Professor"
+        "designation": "Assistant Professor",
+        "researchArea": " Antennas, Antenna Arrays, Metamaterials, Frequency Selective Surfaces, Shared Apertures, Microwave Components",
+        "emailID": "harishadhithyam@iiitt.ac.in",
+        "src": "/faculty/HarishAdhithyaM.JPG",
+        "Incharge": "NIRF Member, Campus Maintenance, Clubs - IoT and Robotics, Computer Networking and Security, Fine Arts, C, Yoga, Literary and Debating, Photography",
+        "Institute": "Ph.D. ECE (NIT Tiruchirappalli)",
+        "VidhwanLink": "https://vidwan.inflibnet.ac.in/profile/588971"
       }
     ],
     "faculty_profiles_link": "/faculty",
@@ -107,6 +195,53 @@
         "status": "Ongoing"
       }
     ],
+    "timetable":[
+      {
+        "name":"Electronics & Communications Engineering - II Year",
+        "link":"ECE_II.pdf"
+      },
+      {
+        "name":"Electronics & Communications Engineering - III Year",
+        "link":"ECE_III.pdf"
+      },
+      {
+        "name":"Electronics & Communications Engineering - IV Year",
+        "link":"ECE_IV.pdf"
+      }
+    ],
+    "class_coordinator": [
+      {
+        "id": {
+          "dept": "CSE",
+          "deptID": "7"
+        },
+        "name": "Dr. Banoth Ravi",
+        "designation": "B.Tech CSE II Year",
+        "emailID": "ravib@iiitt.ac.in",
+        "src": "/faculty/raviB_2024.jpeg"
+      },
+      {
+        "id": {
+          "dept": "ECE",
+          "deptID": "7"
+        },
+        "name": "Dr. M. Harish Adhithya",
+        "designation": "B.Tech CSE IV Year",
+        "emailID": "harishadhithyam@iiitt.ac.in",
+        "src": "/faculty/HarishAdhithyaM.JPG"
+
+      },
+      {
+        "id": {
+          "dept": "ECE",
+          "deptID": "6"
+        },
+        "name": "Dr. R. Krishnamurthy",
+        "designation": "B.Tech CSE IV Year",
+        "emailID": "rkrishnamurthy@iiitt.ac.in",
+        "src": "/faculty/Krishnamurthy.jpg"
+      }
+    ],
     "demographic": {
       "total_students": 114,
       "btech": {
@@ -144,7 +279,19 @@
         ]
       }
     },
-    "announcements": [],
+    "announcements": [
+      {
+      "title": "ADMISSION TO M. Tech. (Self-Support) PROGRAMMES 2025-2026",
+      "date": "13/08/2025",
+      "link": "/admission/MTECH self support Brochure_ August 2025 - Final.pdf"
+
+   },
+    {
+      "title": "Information for Physical Reporting Process of B.Tech. I Semester (2025-26)",
+      "date": "18/08/2025",
+      "link": "/admission/First yr Reporting details 2025-26 - Final.pdf"
+
+    }],
     "latest_news": [],
     "contact": {
       "department": "Department of Electronics and Communication Engineering",
