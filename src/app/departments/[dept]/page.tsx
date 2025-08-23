@@ -5,7 +5,7 @@ import InfoSection from "@/components/InfoSection/InfoSection";
 import PersonCard from "@/components/PersonCard/PersonCard";
 import { Department } from "@/types/Department.types";
 import { validURL } from "@/types/validator";
-import { Box, Skeleton, Typography, List, ListItemButton } from "@mui/material";
+import { Box, Skeleton, Typography, List, ListItemButton, Card } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import { useParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
@@ -13,6 +13,10 @@ import { AnimatePresence, motion } from "framer-motion";
 import nextConfig from "../../../../next.config";
 import styles from "./department.module.css";
 import { PieChart, Tooltip, Cell, Pie, Legend } from "recharts";
+import { GraduationCap } from "lucide-react";
+
+
+
 
 const Cse: React.FC = () => {
   const params = useParams();
@@ -181,7 +185,7 @@ const Cse: React.FC = () => {
                               src={f.src}
                               src_type="faculty"
                               designation={f.designation}
-                           />
+                            />
                           </div>
                         ))
                       ) : (
@@ -194,14 +198,22 @@ const Cse: React.FC = () => {
                 {activeSection === "Programme Offered" && (
                   <InfoSection title="Programme Offered">
                     {cseData["programme_offered"]?.filter(Boolean).length ? (
-                      cseData["programme_offered"].map((p, i) => (
-                        <Typography key={i}>{p}</Typography>
-                      ))
+                      <div className={styles.programmeGrid}>
+                        {cseData["programme_offered"].map((programme, i) => (
+                          <div key={i} className={styles.programmeCard}>
+                            <div className={styles.programmeIconContainer}>
+                              <GraduationCap className={styles.programmeIcon} />
+                              <div className={styles.programmeName}>{programme}</div>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
                     ) : (
                       <EmptyNotice />
                     )}
                   </InfoSection>
                 )}
+
 
                 {activeSection === "Research Scholars" && (
                   <InfoSection title="Research Scholars">
@@ -230,11 +242,15 @@ const Cse: React.FC = () => {
                   </InfoSection>
                 )}
 
+
                 {activeSection === "Research Areas" && (
                   <InfoSection title="Research Areas">
+
                     {cseData.research_areas?.length ? (
                       cseData.research_areas.map((a, i) => (
-                        <Typography key={i}>{a}</Typography>
+                        <Box className={styles.programmeCard} key={i}>
+                        <Typography className={styles.programmeName} >{a}</Typography>
+                        </Box>
                       ))
                     ) : (
                       <EmptyNotice />
@@ -250,6 +266,21 @@ const Cse: React.FC = () => {
                           <Typography>{a.name}</Typography>
                           <Typography>{a.description}</Typography>
                         </Box>
+                      ))
+                    ) : (
+                      <EmptyNotice />
+                    )}
+                  </InfoSection>
+                )}
+
+                {activeSection === "Publications" && (
+                  <InfoSection title="Publications">
+                    {cseData.publications?.length ? (
+                      cseData.publications.map((p, i) => (
+                        <Card key={i} className={styles.publications}>
+                          <Typography sx={{ margin: 1 }}>{p.paper}</Typography>
+
+                        </Card>
                       ))
                     ) : (
                       <EmptyNotice />
@@ -273,7 +304,7 @@ const Cse: React.FC = () => {
                 {activeSection === "Timetable" && (
                   <InfoSection title="Timetable">
                     {cseData.timetable?.map((p, i) => (
-                      <div key={i} className="mb-3">
+                      <div key={i} className={styles.chartscontainer}>
                         <Typography>{p.name}</Typography>
                         {p.link && (
                           <a href={`public/docs/${p.link}`} download className={styles.link}>
@@ -289,11 +320,11 @@ const Cse: React.FC = () => {
 
                 {activeSection === "Demographics" && (
                   <InfoSection title="Demographics">
-                    <div className="charts-container">
+                    <div className={styles.chartscontainer}>
                       {/* B.Tech Donut */}
-                      <div className="chart-box">
-                        <h3 className="chart-title">B.Tech</h3>
-                        <p className="chart-subtitle">
+                      <div className={styles.chartbox}>
+                        <h3 className={styles.charttitle}>B.Tech</h3>
+                        <p className={styles.chartsubtitle}>
                           Total: {cseData.demographic.btech.total}
                         </p>
                         <PieChart width={300} height={300}>
@@ -327,9 +358,9 @@ const Cse: React.FC = () => {
                       </div>
 
                       {/* M.Tech Donut */}
-                      <div className="chart-box">
-                        <h3 className="chart-title">M.Tech</h3>
-                        <p className="chart-subtitle">
+                      <div className={styles.chartbox}>
+                        <h3 className={styles.charttitle}>M.Tech</h3>
+                        <p className={styles.chartsubtitle}>
                           Total: {cseData.demographic.mtech.total}
                         </p>
                         <PieChart width={300} height={300}>
@@ -377,12 +408,12 @@ const Cse: React.FC = () => {
 
                 {activeSection === "Lab Facilities" && (
                   <InfoSection title="Lab Facilities">
-                    {cseData.lab_facilities?.map((lab, index) => (
-                      <div key={index} className="mb-3">
-                        <Typography>{lab.description}</Typography>
-                        {lab.link && (
+                    {cseData.lab_facilities?.map((l, i) => (
+                      <div key={i} className="mb-3">
+                        <Typography>{l.description}</Typography>
+                        {l.link && (
                           <a href="#" className="text-blue-500 underline">
-                            {lab.link}
+                            {l.link}
                           </a>
                         )}
                       </div>
@@ -402,7 +433,7 @@ const Cse: React.FC = () => {
                               src={f.src}
                               src_type="faculty"
                               designation={f.designation}
-                           />
+                            />
                           </div>
                         ))
                       ) : (

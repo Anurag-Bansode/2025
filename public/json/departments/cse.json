@@ -246,6 +246,16 @@
         "description": "  GATE 2024 AIR 14 CSE ,GATE 2024 AIR 21 DA"
       }
     ],
+
+    "publications": [
+      {
+        "paper":"Khalid, O., Ullah, S., Ahmad, T., Saeed, S., Alabbad, D.A., Aslam, M., Buriro, A. and Ahmad, R., 2023. An insight into the machine-learning-based fileless malware detection. Sensors, 23(2), p.612."
+      },
+      {
+        "paper":"Khalid, O., Ullah, S., Ahmad, T., Saeed, S., Alabbad, D.A., Aslam, M., Buriro, A. and Ahmad, R., 2023. An insight into the machine-learning-based fileless malware detection. Sensors, 23(2), p.612."
+      }
+
+    ],
     "demographic": {
       "total_students": 211,
       "btech": {

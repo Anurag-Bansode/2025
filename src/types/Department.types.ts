@@ -60,6 +60,9 @@ export interface Department {
     name:string,
     link:string
   }[];
+  publications:{
+    paper:string;
+  }[];
 }
 
 interface YearWiseCount {

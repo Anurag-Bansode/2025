@@ -19,7 +19,7 @@
           "deptID": "1"
         },
         "name": "Dr. R. Krishnamurthy",
-        "designation": "Assistant Professor",
+        "designation": "Head of the Department",
         "researchArea": " RF and Microwave Engineering, Optical Communication",
         "emailID": "rkrishnamurthy@iiitt.ac.in",
         "src": "/faculty/Krishnamurthy.jpg",
@@ -56,21 +56,6 @@
         "Incharge": "NBA, NIRF, and Internship, Institute Mess. ",
         "Institute": "Ph.D. ECE (MIT Campus, Anna University Chennai)",
         "VidhwanLink": "https://iiitt.irins.org/profile/194474"
-      },
-      {
-        "id": {
-          "dept": "ECE",
-          "deptID": "2"
-        },
-        "name": "Dr. R. Krishnamurthy",
-        "designation": "Assistant Professor",
-        "researchArea": " RF and Microwave Engineering, Optical Communication",
-        "emailID": "rkrishnamurthy@iiitt.ac.in",
-        "src": "/faculty/Krishnamurthy.jpg",
-        "Incharge": "Aahladh and Atrang",
-        "Institute": "Ph.D. ECE ( IISc. Bangalore) ",
-        "VidhwanLink": "https://vidwan.inflibnet.ac.in/profile/562856",
-        "PersonalPage": "https://sites.google.com/view/krishnamurthyramanujam/home?pli=1"
       },
       {
         "id": {
@@ -223,6 +208,16 @@
       {
         "id": {
           "dept": "ECE",
+          "deptID": "6"
+        },
+        "name": "Dr. S. Padmathilagam",
+        "designation": "B.Tech CSE III Year",
+        "emailID": "padmathilagams@iiitt.ac.in",
+        "src": "/faculty/PadmathilagamS.jpg"
+      },
+      {
+        "id": {
+          "dept": "ECE",
           "deptID": "7"
         },
         "name": "Dr. M. Harish Adhithya",
@@ -230,17 +225,8 @@
         "emailID": "harishadhithyam@iiitt.ac.in",
         "src": "/faculty/HarishAdhithyaM.JPG"
 
-      },
-      {
-        "id": {
-          "dept": "ECE",
-          "deptID": "6"
-        },
-        "name": "Dr. R. Krishnamurthy",
-        "designation": "B.Tech CSE IV Year",
-        "emailID": "rkrishnamurthy@iiitt.ac.in",
-        "src": "/faculty/Krishnamurthy.jpg"
       }
+
     ],
     "demographic": {
       "total_students": 114,
@@ -253,7 +239,7 @@
           },
           {
             "year": "2nd Year",
-            "count": 0
+            "count": 47
           },
           {
             "year": "3rd Year",
